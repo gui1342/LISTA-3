@@ -3,7 +3,9 @@ entrada contém o caractere fornecido.*/
 
 #include <stdio.h>
 #include <string.h>
+
 #define TAM 50
+
 int main() {
   char string[TAM], caractere;
   
