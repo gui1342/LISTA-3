@@ -1,4 +1,5 @@
-/*4. Faça um programa em C que leia duas strings do usuário e informe se elas são iguais. Faça uma versão com o uso da função strcmp() e outra sem.*/
+/*4. Faça um programa em C que leia duas strings do usuário e informe se elas são iguais. 
+Faça uma versão com o uso da função strcmp() e outra sem.*/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -46,24 +47,24 @@ int main() {
   return 0;
 }
 
-bool verificar(char *string, char *str){
-  int i = 1;
-  if(string[0] == str[0]){
-    while(string[i] == str[i] && i < 31){
-      i++;
+    bool verificar(char *string, char *str){
+      int i = 1;
+      if(string[0] == str[0]){
+        while(string[i] == str[i] && i < 31){
+          i++;
+        }
+      }
+      else{
+        return false;
+      }
+      return true;
     }
-  }
-  else{
-    return false;
-  }
-  return true;
-}
 
-bool com_strcmp(char *string, char *str){
-  if(strcmp(string, str) == 0){
-    return true;
-  }
-  else{
-    return false;
-  }
-}
+    bool com_strcmp(char *string, char *str){
+      if(strcmp(string, str) == 0){
+        return true;
+      }
+      else{
+        return false;
+      }
+    }
